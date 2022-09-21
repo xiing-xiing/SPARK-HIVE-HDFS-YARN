@@ -6,3 +6,5 @@ hadoop dfsadmin -safemode enter
 
 hdfs离开安全模式：
 hadoop dfsadmin -safemode leave
+
+hdfs haadmin -getServiceState namenode1
