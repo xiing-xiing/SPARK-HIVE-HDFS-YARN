@@ -1,0 +1,8 @@
+hdfs查看datanode的状态：
+hadoop dfsadmin -report
+
+hdfs进入安全模式：
+hadoop dfsadmin -safemode enter 
+
+hdfs离开安全模式：
+hadoop dfsadmin -safemode leave
