@@ -3,4 +3,7 @@ hdfs集群的所有的ip写在了/etc/hosts
 查看所有机器的磁盘空间
 for i in `cat /etc/hosts|grep hdfs|awk '{print $1}'`;do echo $i;ssh $i df -Th |grep hdfsdata;done
 
+转移数据：
+hdfs dfsadmin -setBalancerBandwidth {ip:端口}
 hdfs balancer -threshold 10
+
