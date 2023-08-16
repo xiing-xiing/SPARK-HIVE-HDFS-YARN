@@ -8,3 +8,11 @@ hdfs离开安全模式：
 hadoop dfsadmin -safemode leave
 
 hdfs haadmin -getServiceState namenode1
+
+hdsf文件操作常用命令：
+-ls 查看hdfs上目录，如 hdfs dfs -ls /
+-put 将本地文件上传到hdfs，如hdfs dfs -put 本地文件路径 hdfs路径
+-get 将hdfs文件下载到本地，如 hdfs dfs -get hdfs文件路径 本地文件路径
+-mkdir 在hdfs 上创建文件夹，如hdfs dfs -mkdir /test
+-cp 将hdfs文件或目录复制 如 hdfs dfs -cp /test.txt /a/
+-cat 查看hdfs上文件内容 如hdfs dfs -cat /test.txt
